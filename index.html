@@ -17,8 +17,23 @@
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scroll-down.js"></script>
+<script>
+      // The client supports JavaScript
+      var el = document.documentElement
+      el.className = el.className.replace('no-js', 'js')
+      
+    </script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700">
 </head>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -51,9 +66,68 @@ $(document).ready(function(){
   background-color: pink;
 }
 
-#section2 {
+/*#section2 {
   height: 600px;
   background-color: yellow;
+}*/
+.separator-type, .title-type, .intro-type, .content-type .intro-type p {
+  position: relative;
+}
+.intro-type .container {
+  padding: 107px 0px 102px 0px !important;
+}
+.company-heading h1 {
+  margin-bottom: 6px;
+  padding-bottom: 50px;
+  line-height: 80px;
+  color: #fff;
+  font-weight: 700 !important;
+  text-align: center;
+}
+.jumbo {
+  margin-top: 50px;
+}
+.seo-header, .product-header, 
+.intro-type .container h1.white, 
+.company-heading h1 {
+  font-weight: 100 !important;
+  text-transform: capitalize;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+.parallax {
+  background-attachment: inherit !important;
+}
+.parallax {
+  background-attachment: inherit !important;
+}
+.parallax {
+  background-attachment: inherit !important;
+  background-repeat: repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: -10;
+}
+.ct-btn-scroll {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 500px;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+img, 
+figure {
+  max-width: 100%;
 }
 </style>
 <body>
@@ -63,7 +137,7 @@ $(document).ready(function(){
 <nav class="navbar navbar-expand-lg navbar-light">
 <div class="container box_1620">
 
-<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+<a class="navbar-brand logo_h" href="index.html"><img src="img/iiic_logo.png" alt="" height="30px" width="30px"></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
@@ -73,29 +147,30 @@ $(document).ready(function(){
 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 <ul class="nav navbar-nav menu_nav ml-auto">
 <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a>
-<li class="nav-item submenu dropdown">
+<li class="nav-item"><a class="nav-link" href="#section2">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#section3">Schedule</a>
+<li class="nav-item"><a class="nav-link" href="#section4">FAQ</a>
+<!-- <li class="nav-item submenu dropdown">
 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
 <ul class="dropdown-menu">
 <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a>
-<li class="nav-item"><a class="nav-link" href="venue.html">Venue</a>
-<li class="nav-item"><a class="nav-link" href="price.html">Pricing</a>
-<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+<li class="nav-item"><a class="nav-link" href="venue.html">Venue</a> -->
+<li class="nav-item"><a class="nav-link" href="price.html">Register</a>
+<li class="nav-item"><a class="nav-link" href="#section5">Contact</a></li>
 </ul>
 </li>
-<li class="nav-item submenu dropdown">
+<!-- <li class="nav-item submenu dropdown">
 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 <ul class="dropdown-menu">
 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
 <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
 </ul>
-</li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
+</li> -->
+<!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+ --></ul>
 <ul class="nav navbar-nav navbar-right">
-<li class="nav-item"><a href="#" class="tickets_btn">Get Tickets</a></li>
-<li class="nav-item"><a href="#" class="search"><i class="lnr lnr-magnifier"></i></a></li>
+<!-- <li class="nav-item"><a href="#" class="tickets_btn">Get Tickets</a></li>
+ --><li class="nav-item"><a href="#" class="search"><i class="lnr lnr-magnifier"></i></a></li>
 </ul>
 </div>
 </div>
@@ -108,23 +183,25 @@ $(document).ready(function(){
 <div class="banner_inner">
 <div class="container">
 <div class="banner_content">
-<h2>Buisness Hackathon 2019<br />IIIC</h2>
-<p>A Hackathon to increase your performance</p>
-<a class="banner_btn" href="#">View More Details</a>
+<h2 style="color:white">Buisness Hackathon 2019<br />IIIC</h2>
+<p>A 17 Hour mini hackathon to Collaborate and Build great softwares and apps,presented by IIIC IIITA</p>
+<!-- <a class="banner_btn" href="#">View More Details</a>
+ -->
+<a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
 </div>
 </div>
 </div>
 </section>
 
 
-<section class="event_time_area">
+<section class="event_time_area" id="section2">
 <div class="container">
 <div class="event_time_inner">
 <div class="row">
 <div class="col-lg-6">
 <div class="event_text">
-<h3>Next Event will Start in</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+<h3>The Event will Start in</h3>
+<p>The wait is going to be over soon...</p>
 </div>
 </div>
 <div class="col-lg-6">
@@ -155,19 +232,20 @@ $(document).ready(function(){
 </section>
 
 
-<section class="welcome_area pad_btm">
+<section class="welcome_area pad_btm" id="section2">
 <div class="container">
 <div class="welcome_inner row">
 <div class="col-lg-5">
 <div class="welcome_img">
-<img class="img-fluid" src="img/welcome-1.jpg" alt="">
+<img class="img-fluid" src="img/img1.jpg" alt="">
 </div>
 </div>
 <div class="col-lg-6 offset-lg-1">
 <div class="welcome_text">
-<h3>Welcome to Eventure</h3>
-<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace.</p>
+<h3>About</h3>
+<p>Hackathon is an event, typically lasting several days, in which a large number of people meet to engage in collaborative computer programming. The concept of the hackathon was born out of the open source community.
+
+This time on popular demand IIIT-A is organising a mini hacakthon for its students, a 20 hour long event. The hackathon would inspire you to imagine, design, code and create. So it time to show the magic in your fingers and create the project you have always thought of, or discussed with your friend on the late night intellectual tea breaks, or anything random which is too crazy to be ignored.</p>
 <a class="main_btn" href="#">View More Details</a>
 </div>
 </div>
@@ -175,11 +253,261 @@ $(document).ready(function(){
 </div>
 </section>
 
+ <section id="section3" class="Section Section--padded">
+    <div class="Container Container">
+      <h2 class="Text Text--heading u-marginBottom-x2"><i class="Icon Icon--schedule Icon--inline"></i>Schedule</h2>
+      <div data-schedule class="Grid Schedule">
+        <div class="Grid-cell u-sm-size1of3">
+          <h3 class="Text Text--spaced u-underlined u-overlined u-offsetParent">Filter by checkpoints
+            <button data-filter-reset class="Schedule-reset"><i class="Icon Icon--closeWhite"></i></button>
+          </h3>
+          <div class="Radio Radio--featured">
+            <input id="filter-featured" type="checkbox" name="filter" value="featured" data-filter class="Radio-state">
+            <label for="filter-featured" class="Radio-label Text Text--spaced">Registration</label>
+          </div>
+          <div class="Radio Radio--build">
+            <input id="filter-build" type="checkbox" name="filter" value="build" data-filter class="Radio-state">
+            <label for="filter-build" class="Radio-label Text Text--spaced">Breaks</label>
+          </div>
+          <div class="Radio Radio--collab">
+            <input id="filter-collaboration" type="checkbox" name="filter" value="collaboration" data-filter class="Radio-state">
+            <label for="filter-collaboration" class="Radio-label Text Text--spaced">Workshop</label>
+          </div>
+        </div>
+        <div class="Grid-cell u-sm-size2of3">
+          <div class="Schedule-day">
+            <h3 data-dropdown data-dropdown-target="#day1" class="Text Text--spaced u-underlined u-overlined u-clickable u-offsetParent">October 28th<span class="Schedule-toggle"><i class="Caret"></i></span></h3>
+            <ul id="day1" class="List Dropdown is-expanded">
+              <div class="Dropdown-content">
+                <li class="List-item Schedule-event Schedule-event--" data-event data-track="">
+                  <div class="Grid Grid--collapsed">
+                    <div class="Grid-cell u-size1of4 Text Schedule-eventTime"><i class="Schedule-mark"></i>22:00
+                      <div class="Schedule-eventTimeEnd">-&nbsp;22:30
+                      </div>
+                    </div>
+                    <div class="Grid-cell u-size3of4">
+                      <p class="Text Schedule-title">Inaugration &amp; Briefing</p>
+                    </div>
+                  </div>
+                  <div class="Schedule-eventDescription">
+                    <p>A short Inaugration session followed by a briefing session on how this hackathon is going to be conducted.</p>
+                  </div>
+                </li>
+                <li class="List-item Schedule-event Schedule-event--featured "  data-event data-track="featured">
+                  <div class="Grid Grid--collapsed">
+                    <div class="Grid-cell u-size1of4 Text Schedule-eventTime"><i class="Schedule-mark"></i>22:30
+                      <div class="Schedule-eventTimeEnd">-&nbsp;23:00
+                      </div>
+                    </div>
+                    <div class="Grid-cell u-size3of4">
+                      <p class="Text Schedule-title">Registration</p>
+                    </div>
+                  </div>
+                  <div class="Schedule-eventDescription">
+                    <p>You can register your teams in this time slot.</p>
+                  </div>
+                </li>
+               <li class="List-item Schedule-event Schedule-event--" data-event data-track="">
+                  <div class="Grid Grid--collapsed">
+                    <div class="Grid-cell u-size1of4 Text Schedule-eventTime"><i class="Schedule-mark"></i>23:00
+                      <div class="Schedule-eventTimeEnd">
+                      </div>
+                    </div>
+                    <div class="Grid-cell u-size3of4">
+                      <p class="Text Schedule-title">Hacking Starts</p>
+                    </div>
+                  </div>
+                  <div class="Schedule-eventDescription">
+                    <p>Start building your softwares and apps ! </p>
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="Schedule-day">
+            <h3 data-dropdown data-dropdown-target="#day2" class="Text Text--spaced u-underlined u-overlined u-clickable u-offsetParent">October 29th<span class="Schedule-toggle"><i class="Caret"></i></span></h3>
+            <ul id="day2" class="List Dropdown">
+              <div class="Dropdown-content">
+           
+                <li class="List-item Schedule-event Schedule-event--collaboration" data-event data-track="collaboration">
+                  <div class="Grid Grid--collapsed">
+                    <div class="Grid-cell u-size1of4 Text Schedule-eventTime"><i class="Schedule-mark"></i>1:00
+                      <div class="Schedule-eventTimeEnd">-&nbsp;1:45
+                      </div>
+                    </div>
+                    <div class="Grid-cell u-size3of4">
+                      <p class="Text Schedule-title">Workshop</p>
+                      
+                      <p class="Text Schedule-speaker">Open Source Contribution by Google Summer of Code 2017 participants</p>
+                    </div>
+                  </div>
+                </li>
+                     <li class="List-item Schedule-event Schedule-event--build " data-event data-track="build">
+                  <div class="Grid Grid--collapsed">
+                    <div class="Grid-cell u-size1of4 Text Schedule-eventTime"><i class="Schedule-mark"></i>3:00
+                      <div class="Schedule-eventTimeEnd">
+                      </div>
+                    </div>
+                    <div class="Grid-cell u-size3of4">
+                      <p class="Text Schedule-title">Snacks</p>
+                    </div>
+                  </div>
+                </li>
+                 <li class="List-item Schedule-event Schedule-event--build" data-event data-track="build">
+                  <div class="Grid Grid--collapsed">
+                    <div class="Grid-cell u-size1of4 Text Schedule-eventTime"><i class="Schedule-mark"></i>9:00
+                      <div class="Schedule-eventTimeEnd">
+                      </div>
+                    </div>
+                    <div class="Grid-cell u-size3of4">
+                      <p class="Text Schedule-title">Breakfast</p>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="List-item Schedule-event Schedule-event--" data-event data-track="">
+                  <div class="Grid Grid--collapsed">
+                    <div class="Grid-cell u-size1of4 Text Schedule-eventTime"><i class="Schedule-mark"></i>12:00
+                      <div class="Schedule-eventTimeEnd">
+                      </div>
+                    </div>
+                    <div class="Grid-cell u-size3of4">
+                      <p class="Text Schedule-title">Goodies Distribution</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="List-item Schedule-event Schedule-event--build" data-event data-track="build">
+                  <div class="Grid Grid--collapsed">
+                    <div class="Grid-cell u-size1of4 Text Schedule-eventTime"><i class="Schedule-mark"></i>13:00
+                      <div class="Schedule-eventTimeEnd">
+                      </div>
+                    </div>
+                    <div class="Grid-cell u-size3of4">
+                      <p class="Text Schedule-title">Lunch Break</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="List-item Schedule-event Schedule-event--" data-event data-track="">
+                  <div class="Grid Grid--collapsed">
+                    <div class="Grid-cell u-size1of4 Text Schedule-eventTime"><i class="Schedule-mark"></i>16:00
+                      <div class="Schedule-eventTimeEnd">
+                      </div>
+                    </div>
+                    <div class="Grid-cell u-size3of4">
+                      <p class="Text Schedule-title">Coding ends</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="List-item Schedule-event Schedule-event--" data-event data-track="">
+                  <div class="Grid Grid--collapsed">
+                    <div class="Grid-cell u-size1of4 Text Schedule-eventTime"><i class="Schedule-mark"></i>16:30
+                      <div class="Schedule-eventTimeEnd">
+                      </div>
+                    </div>
+                    <div class="Grid-cell u-size3of4">
+                      <p class="Text Schedule-title">Presentation of project starts</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="List-item Schedule-event Schedule-event--" data-event data-track="">
+                  <div class="Grid Grid--collapsed">
+                    <div class="Grid-cell u-size1of4 Text Schedule-eventTime"><i class="Schedule-mark"></i>18:30
+                      <div class="Schedule-eventTimeEnd">
+                      </div>
+                    </div>
+                    <div class="Grid-cell u-size3of4">
+                      <p class="Text Schedule-title">IIITAHacks ends with prize distribution and photoshoot</p>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="FAQ" class="Section Section--padded">
+    <style type="text/css">
+    .faq-header{
+      font-size: 2em;
+      border-bottom: 1px dotted #ccc;
+      padding: 1em 0;
+    }
+    .faq-c {
+      border-bottom: 1px dotted #ccc;
+      padding: 1em 0;
+    }
+    .faq-t {
+      line-height: 1em;
+      color: #aaa; 
+      font-family: sans-serif; 
+      float:left; 
+      font-weight: 700; 
+      padding-right: 0.3em; 
+      -webkit-transition: all 200ms;
+      -moz-transition: all 200ms;
+      transition: all 200ms;
+    }
+    .faq-o {
+      transform: rotate(-45deg);
+      transform-origin: 50% 50%;
+      -ms-transform: rotate(-45deg);
+      -ms-transform-origin: 50% 50%;
+      -webkit-transform: rotate(-45deg);
+      -webkit-transform-origin: 50% 50%;
+      -webkit-transition: all 200ms;
+      -moz-transition: all 200ms;
+      transition: all 200ms;
+    }
+    .faq-q {
+      cursor: pointer;
+      font-size: 1.5em;
+      font-weight: 100;
+    }
+    .faq-a {
+      clear: both;
+      color: #666;
+      display: none;
+      padding-left: 1.5em;
+    }
+  </style>
+  
+  <div class="Container" id="section4">
+    <h2 class="Text Text--heading u-marginBottom"><i class="Icon Icon--arrow Icon--inline"></i>FAQ's</h2>
+    <div class="faq-c">
+      <div class="faq-q"><span class="faq-t">+</span>What is a hackathon?</div>
+      <div class="faq-a">
+        <p>A hackathon is a design sprint-like event in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, and others, often including subject-matter-experts, collaborate intensively on software projects.</p>
+      </div>
+    </div>
 
+    <div class="faq-c">
+      <div class="faq-q"><span class="faq-t">+</span>Is there any eligibility criteria for B-thon19?</div>
+      <div class="faq-a">
+        <p>If you are a college student and have the passion for building something productive out of technology,you're good to go!</p>
+      </div>
+    </div>
+
+    <div class="faq-c">
+      <div class="faq-q"><span class="faq-t">+</span>What about the accommadation and food?</div>
+      <div class="faq-a">
+        <p>We will be providing you with mattresses at the venue of the hackathon and the food provision is on us.</p>
+      </div>
+    </div>
+ <div class="faq-c">
+      <div class="faq-q"><span class="faq-t">+</span>What do I benefit from being part of a hackathon?</div>
+      <div class="faq-a">
+        <p>You get to learn new skills on-the-go,learn to debug errors efficiently,learn how to coordinate among a team and gain inspiration and ideas from other projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="team_area p_120">
 <div class="container">
 <div class="main_title">
-<h2>Meet Head Speakers</h2>
+<h2>Organizers</h2>
 <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
 </div>
 <div class="row team_inner">
@@ -252,186 +580,6 @@ $(document).ready(function(){
 </section>
 
 
-<section class="event_schedule_area p_120">
-<div class="container">
-<div class="main_title">
-<h2>Event Schedule</h2>
-<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
-</div>
-<div class="event_schedule_inner">
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-<li class="nav-item">
-<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Day 01</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Day 02</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Day 03</a>
-</li>
-</ul>
-<div class="tab-content" id="myTabContent">
-<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
- <div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-</div>
-<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-</div>
-<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-<div class="media">
-<div class="d-flex">
-<img src="img/schedule-1.jpg" alt="">
-</div>
-<div class="media-body">
-<h5>09.00 am</h5>
-<h4>Opening Ceremony</h4>
-<p>Speech by: Mark weins</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
 
 <section class="home_map_area">
 <div id="mapBox2" class="mapBox2" data-lat="40.701083" data-lon="-74.1522848" data-zoom="13" data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia." data-mlat="40.701083" data-mlon="-74.1522848">
@@ -472,7 +620,7 @@ $(document).ready(function(){
 </section>
 
 
-<section class="price_area p_120">
+<!-- <section class="price_area p_120">
 <div class="container">
 <div class="main_title">
 <h2>Ticket Pricing</h2>
@@ -549,10 +697,10 @@ $(document).ready(function(){
 </div>
 </div>
 </div>
-</section>
+</section> -->
 
 
-<footer class="footer-area p_120">
+<footer class="footer-area p_120" id="section5">
 <div class="container">
 <div class="row">
 <div class="col-lg-3  col-md-6 col-sm-6">
@@ -633,6 +781,59 @@ Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/clou
 <script src="js/theme.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    jQuery(window).load(function(){
+        jQuery(".hameid-loader-overlay").fadeOut(500);
+    });
+</script>
+<script type="text/javascript">
+  $(".faq-q").click( function () {
+    var container = $(this).parents(".faq-c");
+    var answer = container.find(".faq-a");
+    var trigger = container.find(".faq-t");
+    
+    answer.slideToggle(200);
+    
+    if (trigger.hasClass("faq-o")) {
+      trigger.removeClass("faq-o");
+    }
+    else {
+      trigger.addClass("faq-o");
+    }
+  });
+</script>
+<script type="text/javascript">
+  $('a[href*="#"]')
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+      ) {
+      var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000, function() {
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) { 
+          return false;
+        } else {
+          $target.attr('tabindex','-1');
+          $target.focus();
+        };
+      });
+    }
+  }
+});
+</script>
+<script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="scripts/validation.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
