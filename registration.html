@@ -6,13 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bthon Registration</title>
     <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <style>
     .form-box {
         margin-top :50px;
     }
+     .fa-check-circle {
+        font-size: 50px;
+        color: green;
+    }
+    .notification{
+        margin: auto;
+        display :none;
+    }
+    /*
+    .reg-success {
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    .success-box {
+        margin: auto;
+        margin-top : 30%;
+    } */
     </style>
 </head>
 <body>
+    
     <!-- Header start  -->
     <section class="hero is-small is-primary is-bold">
         <div class="hero-body">
@@ -28,7 +47,15 @@
       </section>
       <!-- Header end -->
       <!-- Form start  -->
+      
       <div class="container">
+          <div class="columns">
+                <div class="notification is-warning">
+                        <button class="delete"></button>
+                        <h1 class="title is-1"> <i class="fas fa-check-circle"></i> Registration Successful</h1> 
+                      </div>
+                      
+          </div>
           <div class="columns">
               <div class="column is-8 is-offset-2">
                 <div class=" form-box box">
@@ -259,7 +286,6 @@
               </div>
 
     
-
       <!-- Form end  -->
 </body>
 <script
@@ -268,6 +294,7 @@
   crossorigin="anonymous"></script>
   <script src="js/airtable.browser.js"></script>
 <script>
+    $('.notification').hide();  
 $('.team3').hide();
 $('.team4').hide();
 // console.log($('.team-size').val())
@@ -291,6 +318,9 @@ $('.team-size').on('change', function() {
     $('.team3').fadeIn();
     $('.team4').fadeIn();
 }
+});
+$('.delete').click(function(){
+    $('.notification').fadeOut();
 });
 </script>
 <script>
@@ -341,6 +371,7 @@ $("#submit").click(function(){
     },function(err, record) {
     if (err) { console.error(err); return; }
     console.log(record.getId());
+    $('.notification').fadeIn();
 });
 });
 
