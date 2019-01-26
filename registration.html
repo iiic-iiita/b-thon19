@@ -37,7 +37,7 @@
             <div class="field">
                     <label class="label">Team name</label>
                     <div class="control">
-                      <input class="input" type="text" placeholder="Text input">
+                      <input class="input" id="teamName" type="text" placeholder="Text input">
                     </div>
                   </div>
                 </div>      
@@ -47,7 +47,17 @@
                             <div class="field">
                                     <label class="label">Institute name</label>
                                     <div class="control">
-                                    <input class="input" type="text" placeholder="Text input">
+                                    <input class="input" id="collegeName"type="text" placeholder="Text input">
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="columns">
+                    <div class="column is-12">
+                            <div class="field">
+                                    <label class="label">Contact number</label>
+                                    <div class="control">
+                                    <input class="input" id="contact" type="text" placeholder="Text input">
                                 </div>
                             </div>
                         </div>
@@ -76,7 +86,7 @@
                             <div class="field">
                     
                     <div class="control">
-                      <input class="input" type="text" placeholder="Name">
+                      <input class="input" id="name1" type="text" placeholder="Name">
                     </div>
                   </div>
                         </div>
@@ -84,7 +94,7 @@
                                 <div class="field">
                         
                         <div class="control">
-                          <input class="input" type="text" placeholder="Email ID">
+                          <input class="input" id="email1" type="text" placeholder="Email ID">
                         </div>
                       </div>
                             </div>
@@ -95,14 +105,14 @@
                                 <div class="field">
                         
                         <div class="control">
-                          <input class="input" type="text" placeholder="Github link">
+                          <input class="input" id="github1" type="text"  placeholder="Github link">
                         </div>
                       </div>
                             </div>
                             <div class="column is-6">
                                     <div class="field">
                             <div class="control">
-                              <input class="input" type="text" placeholder="Resume link">
+                              <input class="input" id="resume1" type="text" placeholder="Resume link">
                             </div>
                           </div>
                                 </div>
@@ -116,7 +126,7 @@
                             <div class="field">
                     
                     <div class="control">
-                      <input class="input" type="text" placeholder="Name">
+                      <input class="input" id="name2" type="text" placeholder="Name">
                     </div>
                   </div>
                         </div>
@@ -124,7 +134,7 @@
                                 <div class="field">
                         
                         <div class="control">
-                          <input class="input" type="text" placeholder="Email ID">
+                          <input class="input" id="email2" type="text" placeholder="Email ID">
                         </div>
                       </div>
                             </div>
@@ -135,7 +145,7 @@
                                 <div class="field">
                         
                         <div class="control">
-                          <input class="input" type="text" placeholder="Github link">
+                          <input class="input" id="github2" type="text"  placeholder="Github link">
                         </div>
                       </div>
                             </div>
@@ -143,7 +153,7 @@
                                     <div class="field">
                             
                             <div class="control">
-                              <input class="input" type="text" placeholder="Resume link">
+                              <input class="input" id="resume2" type="text" placeholder="Resume link">
                             </div>
                           </div>
                                 </div>
@@ -157,7 +167,7 @@
                             <div class="field">
                     
                     <div class="control">
-                      <input class="input" type="text" placeholder="Name">
+                      <input class="input" id="name3" type="text" placeholder="Name">
                     </div>
                   </div>
                         </div>
@@ -165,7 +175,7 @@
                                 <div class="field">
                         
                         <div class="control">
-                          <input class="input" type="text" placeholder="Email ID">
+                          <input class="input" id="email3" type="text" placeholder="Email ID">
                         </div>
                       </div>
                             </div>
@@ -176,7 +186,7 @@
                                 <div class="field">
                         
                         <div class="control">
-                          <input class="input" type="text" placeholder="Github link">
+                          <input class="input" id="github3" type="text"  placeholder="Github link">
                         </div>
                       </div>
                             </div>
@@ -184,7 +194,7 @@
                                     <div class="field">
                             
                             <div class="control">
-                              <input class="input" type="text" placeholder="Resume link">
+                              <input class="input" id="resume3" type="text" placeholder="Resume link">
                             </div>
                           </div>
                                 </div>
@@ -198,7 +208,7 @@
                             <div class="field">
                     
                     <div class="control">
-                      <input class="input" type="text" placeholder="Name">
+                      <input class="input" id="name4" type="text" placeholder="Name">
                     </div>
                   </div>
                         </div>
@@ -206,7 +216,7 @@
                                 <div class="field">
                         
                         <div class="control">
-                          <input class="input" type="text" placeholder="Email ID">
+                          <input class="input" id="email4" type="text" placeholder="Email ID">
                         </div>
                       </div>
                             </div>
@@ -217,7 +227,7 @@
                                 <div class="field">
                         
                         <div class="control">
-                          <input class="input" type="text" placeholder="Github link">
+                          <input class="input" id="github4" type="text"  placeholder="Github link">
                         </div>
                       </div>
                             </div>
@@ -225,7 +235,7 @@
                                     <div class="field">
                             
                             <div class="control">
-                              <input class="input" type="text" placeholder="Resume link">
+                              <input class="input" id="resume4" type="text" placeholder="Resume link">
                             </div>
                           </div>
                                 </div>
@@ -235,7 +245,7 @@
                     <div class="column is-6 is-offset-3">
                             <div class="field is-grouped" >
                                     <div class="control" style="margin:auto;">
-                                      <button class="button is-primary">Submit</button>
+                                      <button id="submit" class="button is-primary">Submit</button>
                                     </div>
                                     
                                   </div>
@@ -259,7 +269,7 @@
 <script>
 $('.team3').hide();
 $('.team4').hide();
-console.log($('.team-size').val())
+// console.log($('.team-size').val())
 $('.team-size').on('change', function() {
 //   alert( this.value );
   if(this.value==2){
@@ -281,8 +291,57 @@ $('.team-size').on('change', function() {
     $('.team4').fadeIn();
 }
 });
-
-
+</script>
+<script>
+var Airtable = require('airtable');
+var base = new Airtable({apiKey: 'keyohoRKRtvuB9AvU'}).base('appvpfNQtu7Pcb4zc');
+$("#submit").click(function(){
+    var teamName=document.getElementById("teamName").value;
+    var collegeName=document.getElementById("collegeName").value;
+    var contact=document.getElementById("contact").value;
+    var teamSize=$('.team-size').val();
+    var name1=document.getElementById("name1").value;
+    var email1=document.getElementById("email1").value;
+    var github1=document.getElementById("github1").value;
+    var resume1=document.getElementById("resume1").value;
+    var name2=document.getElementById("name2").value;
+    var email2=document.getElementById("email2").value;
+    var github2=document.getElementById("github2").value;
+    var resume2=document.getElementById("resume2").value;
+    var name3=document.getElementById("name3").value;
+    var email3=document.getElementById("email3").value;
+    var github3=document.getElementById("github3").value;
+    var resume3=document.getElementById("resume3").value;
+    var name4=document.getElementById("name4").value;
+    var email4=document.getElementById("email4").value;
+    var github4=document.getElementById("github4").value;
+    var resume4=document.getElementById("resume4").value;
+    base('registration').create({
+        "Team name" : teamName,
+        "College name" : collegeName,
+        "contact" : contact,
+        "Team size" : teamSize,
+        "name1" :name1,
+        "email1" : email1,
+        "github1" : github1,
+        "resume1" : resume1,
+        "name2" :name2,
+        "email2" : email2,
+        "github2" : github2,
+        "resume2" : resume2,
+        "name3" :name3,
+        "email3" : email3,
+        "github3" : github3,
+        "resume3" : resume3,
+        "name4" :name4,
+        "email4" : email4,
+        "github4" : github4,
+        "resume4" : resume4,
+    },function(err, record) {
+    if (err) { console.error(err); return; }
+    console.log(record.getId());
+});
+});
 
 </script>
 </html>
