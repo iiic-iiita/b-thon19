@@ -107,7 +107,7 @@ footer {
 }
 
 #home .btn-danger {
-    background: #00b657;
+    background: #f2545f;
     border-color: transparent;
 }
 
@@ -216,7 +216,7 @@ footer {
 
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #00b657;
+    color: #f2545f;
 }
 
 .custom-navbar .navbar-nav>li>a:hover,
@@ -226,7 +226,7 @@ footer {
 
 .custom-navbar .nav li.active>a {
     background-color: transparent;
-    color: #00b657;
+    color: #f2545f;
 }
 
 .custom-navbar .navbar-toggle {
@@ -296,7 +296,7 @@ footer {
 }
 
 #overview h3 {
-    color: #00b657;
+    color: #f2545f;
     font-size: 28px;
 }
 
@@ -337,11 +337,11 @@ footer {
 }
 
 #faq h2 {
-    color: #00b657;
+    color: #f2545f;
 }
 
 #faq h4 {
-    color: #00b657;
+    color: #f2545f;
 }
 
 #faq p {
@@ -420,7 +420,7 @@ footer {
 }
 
 #sponsors h2 {
-    color: #00b657;
+    color: #f2545f;
 }
 
 #sponsors p {
@@ -436,7 +436,7 @@ footer {
 }
 
 #venue h2 {
-    color: #00b657;
+    color: #f2545f;
     font-size: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -448,7 +448,7 @@ footer {
 }
 
 #detail .fa {
-    color: #00b657;
+    color: #f2545f;
     font-size: 48px;
 }
 
@@ -472,7 +472,7 @@ footer {
 }
 
 #speakers h2 {
-    color: #00b657;
+    color: #f2545f;
 }
 
 #speakers p {
@@ -480,7 +480,7 @@ footer {
 }
 
 #speakers h3 {
-    color: #00b657;
+    color: #f2545f;
     font-size: 18px;
     margin-bottom: 0px;
 }
@@ -540,7 +540,7 @@ footer {
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {
-    color: #00b657;
+    color: #f2545f;
     cursor: default;
     background-color: transparent;
     border: 1px solid transparent;
@@ -572,7 +572,7 @@ footer {
 }
 
 .go-top:hover {
-    background: #00b657;
+    background: #f2545f;
     color: #ffffff;
 }
 
