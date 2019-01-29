@@ -150,7 +150,7 @@ footer {
   }
   
   .cube1, .cube2 {
-    background-color: #333;
+    background-color: #f2545f;
     width: 15px;
     height: 15px;
     position: absolute;
@@ -266,7 +266,7 @@ footer {
 }
 
 #home {
-    background: url('../images/home-banner.jpg');
+    background-color: #505050;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
