@@ -294,7 +294,8 @@ footer {
 }
 
 #overview {
-    background-color: #3e3e3e;
+    background-color: white;
+    /* color: #000000 */
 }
 
 #overview h3 {
@@ -303,7 +304,7 @@ footer {
 }
 
 #overview p {
-    color: #ffffff;
+    color: #222222;
     font-size: 19px;
 }
 
@@ -447,6 +448,12 @@ footer {
 #detail {
     background: #222;
     color: #ffffff;
+    /* padding-left: 20%; */
+    /* padding-right: 20%; */
+    /* padding: auto; */
+}
+#detail .points{
+    padding-left: 15%;
 }
 
 #detail .fa {
@@ -458,13 +465,13 @@ footer {
     font-size: 20px;
 }
 #detail li {
-    font-size: 30px;
+    font-size: 20px;
 }
 #detail h2 {
     font-size: 50px;
 }
 #detail .quote {
-    font-size: 35px;
+    font-size: 20px;
     color: white;
 }
 #speakers {
