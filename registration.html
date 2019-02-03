@@ -154,10 +154,20 @@
                             </div>
                             <div class="column is-6">
                                     <div class="field">
-                            <div class="control">
-                              <input required class="form-val input" id="tshirt1" type="text" placeholder="T-shirt size">
-                            </div>
-                          </div>
+                                        <div class="control">
+                                          Tshirt size &nbsp &nbsp
+                                          <div class="select">
+                                            <select class="tshirt1-size">
+                                              <option>S</option>
+                                              <option>M</option>
+                                              <option>L</option>
+                                              <option>XL</option>
+                                              <option>XXL</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </div>
+                          
                                 </div>
                         </div>
                 </div>
@@ -195,9 +205,18 @@
                             <div class="column is-6">
                                     <div class="field">
                             
-                            <div class="control">
-                              <input required class="form-val input" id="tshirt2" type="text" placeholder="T-shirt size">
-                            </div>
+                                        <div class="control">
+                                            Tshirt size &nbsp &nbsp
+                                            <div class="select">
+                                              <select class="tshirt2-size">
+                                                <option>S</option>
+                                                <option>M</option>
+                                                <option>L</option>
+                                                <option>XL</option>
+                                                <option>XXL</option>
+                                              </select>
+                                            </div>
+                                          </div>
                           </div>
                                 </div>
                         </div>
@@ -237,8 +256,17 @@
                                     <div class="field">
                             
                             <div class="control">
-                              <input required class="form-val input" id="tshirt3" type="text" placeholder="T-shirt size">
-                            </div>
+                                          Tshirt size &nbsp &nbsp
+                                          <div class="select">
+                                            <select class="tshirt3-size">
+                                              <option>S</option>
+                                              <option>M</option>
+                                              <option>L</option>
+                                              <option>XL</option>
+                                              <option>XXL</option>
+                                            </select>
+                                          </div>
+                                        </div>
                           </div>
                                 </div>
                         </div>
@@ -277,9 +305,18 @@
                             <div class="column is-6">
                                     <div class="field">
                             
-                            <div class="control">
-                              <input required class="form-val input" id="tshirt4" type="text" placeholder="T-shirt size">
-                            </div>
+                                        <div class="control">
+                                            Tshirt size &nbsp &nbsp
+                                            <div class="select">
+                                              <select class="tshirt4-size">
+                                                <option>S</option>
+                                                <option>M</option>
+                                                <option>L</option>
+                                                <option>XL</option>
+                                                <option>XXL</option>
+                                              </select>
+                                            </div>
+                                          </div>
                           </div>
                                 </div>
                         </div>
@@ -350,19 +387,19 @@ $("#submit").click(function(){
     var name1=document.getElementById("name1").value;
     var email1=document.getElementById("email1").value;
     var github1=document.getElementById("github1").value;
-    var tshirt1=document.getElementById("tshirt1").value;
+    var tshirt1=$('.tshirt1-size').val();
     var name2=document.getElementById("name2").value;
     var email2=document.getElementById("email2").value;
     var github2=document.getElementById("github2").value;
-    var tshirt2=document.getElementById("tshirt2").value;
+    var tshirt2=$('.tshirt2-size').val();
     var name3=document.getElementById("name3").value;
     var email3=document.getElementById("email3").value;
     var github3=document.getElementById("github3").value;
-    var tshirt3=document.getElementById("tshirt3").value;
+    var tshirt3=$('.tshirt3-size').val();
     var name4=document.getElementById("name4").value;
     var email4=document.getElementById("email4").value;
     var github4=document.getElementById("github4").value;
-    var tshirt4=document.getElementById("tshirt4").value;
+    var tshirt4=$('.tshirt4-size').val();
     base('registration').create({
         "Team name" : teamName,
         "College name" : collegeName,
