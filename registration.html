@@ -37,7 +37,7 @@
       color: white;
     }
     body{
-      background: #505050;
+      background: white;
     }
     .button {
       background: #f2545f;
@@ -54,8 +54,8 @@
             <!-- <h1 class="title">
               Registration   
             </h1> -->
-            <img src="images/Asset 6.svg">
-            <h1 class="title is-1 ">
+            <img src="images/Asset 12.svg">
+            <h1 class="title is-1 " style="color:#f2545f;">
              Registration
             </h1>
           </div>
@@ -155,7 +155,7 @@
                             <div class="column is-6">
                                     <div class="field">
                             <div class="control">
-                              <input required class="form-val input" id="resume1" type="text" placeholder="Resume link">
+                              <input required class="form-val input" id="tshirt1" type="text" placeholder="T-shirt size">
                             </div>
                           </div>
                                 </div>
@@ -196,7 +196,7 @@
                                     <div class="field">
                             
                             <div class="control">
-                              <input required class="form-val input" id="resume2" type="text" placeholder="Resume link">
+                              <input required class="form-val input" id="tshirt2" type="text" placeholder="T-shirt size">
                             </div>
                           </div>
                                 </div>
@@ -237,7 +237,7 @@
                                     <div class="field">
                             
                             <div class="control">
-                              <input required class="form-val input" id="resume3" type="text" placeholder="Resume link">
+                              <input required class="form-val input" id="tshirt3" type="text" placeholder="T-shirt size">
                             </div>
                           </div>
                                 </div>
@@ -278,7 +278,7 @@
                                     <div class="field">
                             
                             <div class="control">
-                              <input required class="form-val input" id="resume4" type="text" placeholder="Resume link">
+                              <input required class="form-val input" id="tshirt4" type="text" placeholder="T-shirt size">
                             </div>
                           </div>
                                 </div>
@@ -350,19 +350,19 @@ $("#submit").click(function(){
     var name1=document.getElementById("name1").value;
     var email1=document.getElementById("email1").value;
     var github1=document.getElementById("github1").value;
-    var resume1=document.getElementById("resume1").value;
+    var tshirt1=document.getElementById("tshirt1").value;
     var name2=document.getElementById("name2").value;
     var email2=document.getElementById("email2").value;
     var github2=document.getElementById("github2").value;
-    var resume2=document.getElementById("resume2").value;
+    var tshirt2=document.getElementById("tshirt2").value;
     var name3=document.getElementById("name3").value;
     var email3=document.getElementById("email3").value;
     var github3=document.getElementById("github3").value;
-    var resume3=document.getElementById("resume3").value;
+    var tshirt3=document.getElementById("tshirt3").value;
     var name4=document.getElementById("name4").value;
     var email4=document.getElementById("email4").value;
     var github4=document.getElementById("github4").value;
-    var resume4=document.getElementById("resume4").value;
+    var tshirt4=document.getElementById("tshirt4").value;
     base('registration').create({
         "Team name" : teamName,
         "College name" : collegeName,
@@ -371,19 +371,19 @@ $("#submit").click(function(){
         "name1" :name1,
         "email1" : email1,
         "github1" : github1,
-        "resume1" : resume1,
+        "tshirt1" : tshirt1,
         "name2" :name2,
         "email2" : email2,
         "github2" : github2,
-        "resume2" : resume2,
+        "tshirt2" : tshirt2,
         "name3" :name3,
         "email3" : email3,
         "github3" : github3,
-        "resume3" : resume3,
+        "tshirt3" : tshirt3,
         "name4" :name4,
         "email4" : email4,
         "github4" : github4,
-        "resume4" : resume4,
+        "tshirt4" : tshirt4,
     },function(err, record) {
     if (err) { console.error(err); return; }
     console.log(record.getId());
