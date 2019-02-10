@@ -672,12 +672,13 @@ footer {
 }
 
 .github{
-    margin-top: -50px;
+    margin-top: -60px;
     width: 700px;
 }
 
 @media (max-width : 768px){
     .github{
+        margin-top : -60px;
         width: 300px;
     }
 }
