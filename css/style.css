@@ -661,3 +661,26 @@ footer {
         font-size: 35px;
     }
 }
+
+.landing-logo {
+    width: 650px;
+}
+@media (max-width : 768px) {
+    .landing-logo{
+    width: auto;
+    }
+}
+
+.github{
+    margin-top: -50px;
+    width: 700px;
+}
+
+@media (max-width : 768px){
+    .github{
+        width: 300px;
+    }
+}
+
+
+
