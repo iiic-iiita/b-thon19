@@ -685,3 +685,16 @@ footer {
 
 
 
+.cb{
+    margin-top: -60px;
+    width: 400px;
+}
+
+@media (max-width : 768px){
+    .cb{
+        margin-top : -60px;
+        width: 150px;
+    }
+}
+
+
