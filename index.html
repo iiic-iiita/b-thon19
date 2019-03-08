@@ -528,6 +528,7 @@ h3 {
             </div>
         </div>
     </section>
+   
 
     <section id="speakers" class="parallax-section">
         <div class="container">
@@ -594,7 +595,31 @@ h3 {
             </div>
         </div>
     </section>
+    <section id="detail" class="parallax-section">
+        <div class="container">
+            <div class="row">
+                <div class="wow bounceIn col-md-12 col-sm-12">
+                    <div class="section-title">
+                        <h2>Adding webhook in Github</h2>
+                        <p>All the participants of bhacks are requested to follow these steps so that we can track all the commits in your project repository.</p>
+                    </div>
+                </div>
 
+                <div class="points wow fadeInLeft col-md-12 col-sm-12" data-wow-delay="0.3s">
+                    <li>Join the zulip chat using the link : 
+                            <a href="https://bhacks.zulipchat.com">https://bhacks.zulipchat.com</a>
+                    </li>
+                    <li>Go to your repository on GitHub and click on the <b>Settings</b> tab. Select <b>Webhooks</b>. Click on <b>Add webhook</b>. GitHub may prompt you for your password.</li>
+        <li>Set <b>Payload URL</b> to <br>
+            <div style="background-color: rgb(223, 43, 73); font-size: 17px;" >https://bhacks.zulipchat.com/api/v1/external/github?api_key=tWwKmlSUEpuhrdLR6c4YJPgvhPoVrxbf&stream=github</div>
+
+            Set Content type to <b>application/json</b>. Select the events you would like to receive notifications for, and click <b>Add Webhook</b>.</li>      
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <div class="row">
