@@ -32,6 +32,39 @@
        /* width: 270px; */
        margin-top: 0px;
    }
+   ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #f2545f;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+h3 {
+    font-size: 20px;
+}
     </style>
 </head>
 
@@ -129,7 +162,7 @@
                 <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.6s">
                     <div class="section-title">
                         <h2>Schedule</h2>
-                        <p>This event's schedule includes beginning and ending times, along with the times of optional workshops.</p>
+                        <p>The complete event schedule.</p>
                     </div>
                 </div>
                 <div class="wow fadeInUp col-md-10 col-sm-10" data-wow-delay="0.9s">
@@ -137,7 +170,49 @@
                         <li class="active"><a href="#main" aria-controls="main" role="tab" data-toggle="tab">SCHEDULE</a></li>
                     </ul> -->
                     <div class="tab-content">
-                        <h1> COMING SOON </h1>
+                            <div class="row">
+                                    <div class="col-md-6 offset-md-3">
+                                        <ul class="timeline">
+                                            <li>
+                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                                <h3 class="float-right">9:00pm March 8th</h3>
+                                                <p>Registration begins</p>
+                                            </li>
+                                             <li>
+                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                                <h3 class="float-right">10:00pm March 8th</h3>
+                                                <p>B-Hacks Begins at Lab 5421</p>
+                                            </li>
+                                             <li>
+                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                                <h3 class="float-right">3:00am March 9th</h3>
+                                                <p>Snacks</p>
+                                            </li>
+                                             <li>
+                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                                <h3 class="float-right">8:00am March 9th</h3>
+                                                <p>Breakfast break</p>
+                                            </li>
+                                             <li>
+                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                                <h3 class="float-right">1:30pm March 9th</h3>
+                                                <p>Lunch</p>
+                                            </li>
+                                             <li>
+                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                                <h3 class="float-right">5:00pm March 9th</h3>
+                                                <p>B-Hacks ends</p>
+                                            </li>
+                                            <li>
+                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                                <h3 class="float-right">11:00am March 10th</h3>
+                                                <p>B-Hacks presentations at CC-3</p>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                        <!-- <h1> COMING SOON </h1> -->
                         <!-- <div role="tabpanel" class="tab-pane active" id="main">
                             <div class="col-md-2 col-sm-2">
                                 <img src="images/program-img1.png" class="img-responsive" alt="program">
@@ -146,7 +221,7 @@
                                 <h6>
                                     <span><i class="fa fa-clock-o"></i> 08:00 AM</span>
                                 </h6>
-                                <h3>Doors Open</h3>
+                                <h4>Doors Open</h3>
                                 <p>Students will be allowed to enter the venue from 08:00 AM to 09:00 AM. During this time, we will be checking high school IDs and collecting an admission fee of $3.</p>
                             </div>
 
