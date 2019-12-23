@@ -2,12 +2,22 @@
 <html lang="en">
 
 <head>
-    <title>B-HACKS 2019</title>
+    <title>Product-HACK 2020</title>
+    <!--      <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+    </style> -->
     <meta name="description" content="">
     <meta name="author" content="">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -17,74 +27,95 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="images/Asset 9.png">
     <style>
-    /* .title-sponsor {
+        /* .title-sponsor {
         height:150px;
         width: 150px;
     } */
-   /* .text-btw-sponsor {
+        /* .text-btw-sponsor {
        margin-top: 150px;
    } */
-   /* .title-sponsor {
+        /* .title-sponsor {
        text-align: center;
    } */
-   .github {
-       height: auto;
-       /* width: 270px; */
-       margin-top: 0px;
-   }
-   ul.timeline {
-    list-style-type: none;
-    position: relative;
-}
-ul.timeline:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-}
-ul.timeline > li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-ul.timeline > li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #f2545f;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
-}
-h3 {
-    font-size: 20px;
-    color: #666363
-}
+        .github {
+            height: auto;
+            /* width: 270px; */
+            margin-top: 0px;
+        }
+
+        ul.timeline {
+            list-style-type: none;
+            position: relative;
+        }
+
+        ul.timeline:before {
+            content: ' ';
+            background: #d4d9df;
+            display: inline-block;
+            position: absolute;
+            left: 29px;
+            width: 2px;
+            height: 100%;
+            z-index: 400;
+        }
+
+        ul.timeline>li {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        ul.timeline>li:before {
+            content: ' ';
+            background: white;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid #be1754;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            z-index: 400;
+        }
+
+        @media only screen and (max-width: 781px) {
+            .im {
+                width: 250px;
+                height: 350px;
+            }
+        }
+
+        @media only screen and (min-width: 780px) and (max-width: 1200px) {
+            .im {
+                margin-top: 90px;
+                width: 300px;
+                height: 400px;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #ffffff
+        }
     </style>
 </head>
 
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
     <div class="preloader">
-            <div class="spinner">
-                    <div class="cube1"></div>
-                    <div class="cube2"></div>
-                  </div>
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
     </div>
-    <div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+    <div class="navbar custom-navbar" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-					<span class="icon icon-bar"></span>
-				</button>
-                <a href="index.html" class="navbar-brand scroll-to"><img src="images/Asset 11.png" width="50" height="50" alt=""></a>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand scroll-to"><img src="images/Asset 201.svg" width="50"
+                        height="50" alt=""></a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -99,7 +130,7 @@ h3 {
         </div>
     </div>
     <section id="home" class="parallax-section overlay">
-        
+
         <div class="container">
             <!-- <div class="row">
                     <div class="col-md-4 col-sm-4 sponsor-title" >
@@ -114,26 +145,43 @@ h3 {
                             <h4>IIIC ALLAHABAD</h4> 
                         </div>          
             </div> -->
-            <div class="row"> 
+            <div class="row">
                 <div class="col-md-12 col-sm-12">
-                        <img class="landing-logo wow fadeInUp" data-wow-delay="1.6s" src="images/Asset 20.svg" style="">
-                    <h3 class="wow bounceIn" data-wow-delay="0.9s">March 8th in Indian Institute of Information Technology, Allahabad</h3>
-                    
-                    <a href="#"  class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">Registrations closed</a>
-                    <a href="brochure/brochure.pdf" class="btn btn-lg btn-danger smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">SPONSOR US</a>
+                    <img class="landing-logo wow fadeInUp im" data-wow-delay="1.6s" src="images/Asset 11.png">
+                    <h3 class="wow bounceIn" data-wow-delay="0.9s">Feb 7th in Indian Institute of Information
+                        Technology, Allahabad</h3>
+
+                    <a href="#" class="btn btn-lg btn-danger smoothScroll wow fadeInUp"
+                        data-wow-delay="2.3s">Registrations opening soon</a>
+                    <a href="docs/brochure2020.pdf" class="btn btn-lg btn-danger smoothScroll wow fadeInUp"
+                        data-wow-delay="2.3s">SPONSOR US</a>
                 </div>
             </div>
-    </div>
+        </div>
     </section>
     <section id="overview" class="parallax-section">
         <div class="container">
             <div class="row">
                 <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
-                    <h3>What is B-HACKS?</h3>
-                    <p>IIITA Info Communication and Incubation Center (IIIC) with a motive to nurture entrepreneurship in the country is providing an opportunity for student community to realize their dreams, and let their imaginative ideas to flow out of their minds by organizing Business Hackathon in its most awaited annual flagship event E-Summit ‘19.It would be a 18 hour long hackathon where you will be inspired to imagine, design, code and create. The idea will be to find solutions in teams to different problem statements on certain domains like Agriculture, Health Care etc. The team with the most logical, imaginative, creative and implementable ideas will be declared the winner. So its time to show the magic in your fingers and create the project you have always thought of, or discussed with your friend on the late night intellectual tea breaks, or anything random which is too crazy to be ignored.</p>
+                    <h3>What is Product-HACK?</h3>
+                    <p>Product Hack is the collaboration of programmers and designers to
+                        code, design, and build innovative solutions that tackle real-world
+                        problems.
+                        <br>
+                        It will be a 36 hours hackathon and will be held during
+                        IIITA’s incubation center - IIIC’s annual flagship entrepreneurial
+                        event: E-Summit.
+                        <br>
+                        It provides venue for self-expression and creativity.
+                        It is one of a kind hackathon where we’re trying a new format to build
+                        products that would be bought by people or businesses. Most products
+                        built at the hackathon are never used in the future. But, this is the sole
+                        purpose of this hackathon, we stress at building products that are
+                        usable and complete.
+                    </p>
                 </div>
                 <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
-                    <img src="images/about.svg" class="img-responsive" alt="Overview">
+                    <img src="images/hacksat.jpg" class="img-responsive" alt="Overview">
                 </div>
             </div>
         </div>
@@ -142,20 +190,72 @@ h3 {
         <div class="container">
             <div class="row">
                 <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
-                    <img src="images/women.svg" class="img-responsive" alt="Overview" style="margin-top:0px;">
+                    <img src="images/present2.jpg" class="img-responsive" alt="Overview" style="margin-top:0px;">
                 </div>
                 <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
-                    <h3>Commitment</h3>
+                    <h3>Format of Product-HACK?</h3>
+                    <p>This hackathon would be carried out in three phases:
+                        <br>
+                        1.<b> Brainstorming</b> - In this phase, all the participants would be brainstorming
+                        for the idea of the product that they’ll be developing in the hackathon.
+                        They will be developing their idea with their mentors to know their idea
+                        inside out, so as to overcome difficulties and have a full-proof plan.
+                        <br>
+                        2.<b> Coding</b> - This is the phase where the development of the product
+                        happens along with evaluations in between the development.
+                        <br>
+                        3. <b> Pitching</b> - In this phase, the team has to pitch the idea to the judging panel
+                        as to why they should use and buy this product and what are it’s features
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="overview" class="parallax-section">
+        <div class="container">
+            <div class="row">
+                <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
+                    <h3>Diversity</h3>
                     <p>Over the time, we have strived to make sure that women get
                         a chance to showcase their experience with all fairness.
                         We took our commitment a step further by Introducing
                         prizes for best Girl Team and organising workshop for Girls
                         to encourage development.</p>
                 </div>
-                
+                <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
+                    <img src="images/women.jpg" class="img-responsive" alt="Overview">
+                </div>
             </div>
         </div>
     </section>
+    <!-- <section id="overview" class="parallax-section">
+        <div class="container">
+            <div class="row">
+                <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
+                    <h3>Format of Product-HACK?</h3>
+                    <p>This hackathon would be carried out in three phases:
+                        1.<b>Brainstorming</b> - In this phase, all the participants would be brainstorming
+                        for the idea of the product that they’ll be developing in the hackathon.
+                        They will be developing their idea with their mentors to know their idea
+                        inside out, so as to overcome difficulties and have a full-proof plan.
+                        <br>
+                        2.<b>Coding</b> - This is the phase where the development of the product
+                        happens along with evaluations in between the development.
+                        <br>
+                        3. <b>Pitching</b> - In this phase, the team has to pitch the idea to the judging panel
+                        as to why they should use and buy this product and what are it’s features
+                    </p>
+                </div>
+                <div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
+                    <img src="images/about.svg" class="img-responsive" alt="Overview">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
 
     <section id="program" class="parallax-section">
         <div class="container">
@@ -163,7 +263,7 @@ h3 {
                 <div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.6s">
                     <div class="section-title">
                         <h2>Schedule</h2>
-                        <p>The complete event schedule.</p>
+                        <p>Will be updated soon...</p>
                     </div>
                 </div>
                 <div class="wow fadeInUp col-md-10 col-sm-10" data-wow-delay="0.9s">
@@ -171,48 +271,48 @@ h3 {
                         <li class="active"><a href="#main" aria-controls="main" role="tab" data-toggle="tab">SCHEDULE</a></li>
                     </ul> -->
                     <div class="tab-content">
-                            <div class="row">
-                                    <div class="col-md-6 offset-md-3">
-                                        <ul class="timeline">
-                                            <li>
-                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
-                                                <h3 class="float-right">9:00pm March 8th</h3>
-                                                <p>Registration begins</p>
-                                            </li>
-                                             <li>
-                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
-                                                <h3 class="float-right">10:00pm March 8th</h3>
-                                                <p>B-Hacks Begins at Lab 5421</p>
-                                            </li>
-                                             <li>
-                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
-                                                <h3 class="float-right">3:00am March 9th</h3>
-                                                <p>Snacks</p>
-                                            </li>
-                                             <li>
-                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
-                                                <h3 class="float-right">8:00am March 9th</h3>
-                                                <p>Breakfast break</p>
-                                            </li>
-                                             <li>
-                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
-                                                <h3 class="float-right">1:30pm March 9th</h3>
-                                                <p>Lunch</p>
-                                            </li>
-                                             <li>
-                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
-                                                <h3 class="float-right">5:00pm March 9th</h3>
-                                                <p>B-Hacks ends</p>
-                                            </li>
-                                            <li>
-                                                <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
-                                                <h3 class="float-right">11:00am March 10th</h3>
-                                                <p>B-Hacks presentations at CC-3</p>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-6 offset-md-3">
+                                <ul class="timeline">
+                                    <li>
+                                        <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                        <h3 class="float-right">9:00pm Feb 7th</h3>
+                                        <p>Registration begins</p>
+                                    </li>
+                                    <li>
+                                        <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                        <h3 class="float-right">10:00pm Feb 7th</h3>
+                                        <p>Product-Hack Begins at Lab 5421</p>
+                                    </li>
+                                    <li>
+                                        <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                        <h3 class="float-right">3:00am Feb 8th</h3>
+                                        <p>Snacks</p>
+                                    </li>
+                                    <li>
+                                        <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                        <h3 class="float-right">8:00am Feb 8th</h3>
+                                        <p>Breakfast break</p>
+                                    </li>
+                                    <li>
+                                        <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                        <h3 class="float-right">1:30pm Feb 8th</h3>
+                                        <p>Lunch</p>
+                                    </li>
+                                    <li>
+                                        <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                        <h3 class="float-right">5:00pm Feb 8th</h3>
+                                        <p>Product-Hack ends</p>
+                                    </li>
+                                    <li>
+                                        <!-- <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a> -->
+                                        <h3 class="float-right">11:00am Feb 9th</h3>
+                                        <p>Product-Hack presentations at CC-3</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
                         <!-- <h1> COMING SOON </h1> -->
                         <!-- <div role="tabpanel" class="tab-pane active" id="main">
                             <div class="col-md-2 col-sm-2">
@@ -333,15 +433,20 @@ h3 {
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
-                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-	          							 What is a Hackathon?
-	        						</a>
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        What is a Hackathon?
+                                    </a>
                                 </h4>
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                aria-labelledby="headingOne">
                                 <div class="panel-body">
-                                    <p>A hackathon is an event where individuals can learn more about computer science or programming and enhance their skills by creating unique projects and attending workshops. At HackTogether, students will be creating
-                                        projects and competing with each other in order to win prizes and receive recognition.</p>
+                                    <p>A hackathon is an event where individuals can learn more about computer science
+                                        or programming and enhance their skills by creating unique projects and
+                                        attending workshops. At HackTogether, students will be creating
+                                        projects and competing with each other in order to win prizes and receive
+                                        recognition.</p>
                                 </div>
                             </div>
                         </div>
@@ -349,14 +454,17 @@ h3 {
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <h4 class="panel-title">
-                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Is there any eligibility criteria for B-thon19?
-	        						</a>
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Is there any eligibility criteria for P-thon20?
+                                    </a>
                                 </h4>
                             </div>
-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingTwo">
                                 <div class="panel-body">
-                                    <p>If you are a college student and have the passion for building something productive out of technology,you're good to go</p>
+                                    <p>If you are a college student and have the passion for building something
+                                        productive out of technology,you're good to go</p>
                                 </div>
                             </div>
                         </div>
@@ -364,14 +472,17 @@ h3 {
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingThree">
                                 <h4 class="panel-title">
-                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            What about the accommadation and food?
-	        						</a>
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        What about the accommadation and food?
+                                    </a>
                                 </h4>
                             </div>
-                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingThree">
                                 <div class="panel-body">
-                                    <p>We will be providing you with mattresses at the venue of the hackathon and the food provision is on us.</p>
+                                    <p>We will be providing you with mattresses at the venue of the hackathon and the
+                                        food provision is on us.</p>
                                 </div>
                             </div>
                         </div>
@@ -379,28 +490,36 @@ h3 {
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingFour">
                                 <h4 class="panel-title">
-                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            What do I benefit from being part of a hackathon?
-	        						</a>
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        What do I benefit from being part of a hackathon?
+                                    </a>
                                 </h4>
                             </div>
-                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingFour">
                                 <div class="panel-body">
-                                    <p>You get to learn new skills on-the-go,learn to debug errors efficiently,learn how to coordinate among a team and gain inspiration and ideas from other projects.</p>
+                                    <p>You get to learn new skills on-the-go,learn to debug errors efficiently,learn how
+                                        to coordinate among a team and gain inspiration and ideas from other projects.
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
-                        
-                            <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-                                <div class="panel-body">
-                                    <p>If you have any other questions or concerns, please email <a href="mailto:hacktogetheril@gmail.com" style="color: #f2545f">hacktogetheril@gmail.com</a> and we'll get back to you as soon as possible!</p>
-                                </div>
+
+                        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="headingNine">
+                            <div class="panel-body">
+                                <p>If you have any other questions or concerns, please email <a
+                                        href="mailto:hacktogetheril@gmail.com"
+                                        style="color: #be1754">hacktogetheril@gmail.com</a> and we'll get back to you as
+                                    soon as possible!</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -410,48 +529,53 @@ h3 {
 
                 <div class="wow bounceIn col-md-12 col-sm-12">
                     <div class="section-title">
-                        <h2>Our Sponsors</h2>
-                        <p>These are some of our sponsors</p>
-                        <p><a href="docs/brochure.pdf">Download brochure</a></p>
+                        <h2>Past Sponsors</h2>
+                        <p>These are some of past our sponsors</p>
+                        <p><a href="docs/brochure2020.pdf">Download brochure</a></p>
                     </div>
                 </div>
-                
-                 <div class="wow fadeInUp col-md-12 " data-wow-delay="0.3s">
-                    <a href="www.github.com"><img src="images/github.png" class="github" alt="sponsors" ></a>
+
+                <div class="wow fadeInUp col-md-12 " data-wow-delay="0.3s">
+                    <a href="www.github.com"><img src="images/github.png" class="github" alt="sponsors"></a>
                 </div>
                 <div class="wow fadeInUp col-md-12" data-wow-delay="0.3s">
-                    <a href="https://www.infotechhub.in/"><img src="images/infotechhubwhite.png" 
-                            class="ih" alt="sponsors" height="300px"></a>
+                    <a href="https://www.infotechhub.in/"><img src="images/infotechhubwhite.png" class="ih"
+                            alt="sponsors" height="300px" width="350px"></a>
                 </div>
-            <div class="row">
-                <div class="wow fadeInUp col-md-6 " data-wow-delay="0.3s">
-                    <a href="https://codingblocks.com/"><img src="images/cblogo.png" class="cb" alt="sponsors"></a>
-                </div>
-                
-                <div class="wow fadeInUp col-md-6 " data-wow-delay="0.3s">
-                    <a href="https://www.infotechhub.in/"><img src="images/ithlogo.png" class="cb" alt="sponsors" height="180px"></a>
-                </div>
-            </div>
                 <div class="row">
-                   
+                    <div class="wow fadeInUp col-md-6 " data-wow-delay="0.3s">
+                        <a href="https://codingblocks.com/"><img src="images/cblogo.png" class="cb" alt="sponsors"
+                                height="300px" width="400px"></a>
+                    </div>
+
+                    <div class="wow fadeInUp col-md-6 " data-wow-delay="0.3s">
+                        <a href="https://www.infotechhub.in/"><img src="images/ithlogo.png" class="cb" alt="sponsors"
+                                height="300px" width="350px"></a>
+                    </div>
+                </div>
+                <div class="row">
+
                     <div class="wow fadeInUp col-md-6" data-wow-delay="0.3s">
-                        <a href="https://zulipchat.com/"><img src="images/zulip-icon-512x512.png" class="zulip" style="height: 200px; width:200px;" alt="sponsors"></a>
+                        <a href="https://zulipchat.com/"><img src="images/zulip-icon-512x512.png" class="zulip"
+                                style="height: 200px; width:200px;" alt="sponsors"></a>
                     </div>
                     <div class="wow fadeInUp col-md-6" data-wow-delay="0.3s">
-                        <a href="https://get.tech/"><img src="images/meta-logo.png"  style="height: 150px; width:300px;" class="tech" alt="sponsors"></a>
+                        <a href="https://get.tech/"><img src="images/meta-logo.png" style="height: 150px; width:250px;"
+                                class="tech" alt="sponsors"></a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="wow fadeInUp col-md-4" data-wow-delay="0.3s">
-                        <a href=""><img src="images/brainalive-2.png"  style=" padding : 20px; height: 160px; width:350px;" class="tech" alt="sponsors"></a>
+                        <a href=""><img src="images/brainalive-2.png"
+                                style=" padding : 20px; height: 160px; width:250px;" class="tech" alt="sponsors"></a>
                     </div>
-                    <div class="wow fadeInUp col-md-4"  data-wow-delay="0.3s">
-                        <a href=""><img src="images/newlogo2.png" style="height: 200px; width:300px;" class="tech"
+                    <div class="wow fadeInUp col-md-4" data-wow-delay="0.3s">
+                        <a href=""><img src="images/newlogo2.png" style="height: 200px; width:250px;" class="tech"
                                 alt="sponsors"></a>
                     </div>
                     <div class="wow fadeInUp col-md-4  data-wow-delay=" 0.3s">
-                        <a href="https://developers.google.com/programs/dsc/"><img src="images/DSC_badge_Color.svg" style="  height: 200px; width:400px;" class="tech"
-                                alt="sponsors"></a>
+                        <a href="https://developers.google.com/programs/dsc/"><img src="images/DSC_badge_Color.svg"
+                                style="  height: 200px; width:300px;" class="tech" alt="sponsors"></a>
                     </div>
                 </div>
 
@@ -460,22 +584,56 @@ h3 {
             </div>
         </div>
     </section>
+
     <section id="detail" class="parallax-section">
-            <div class="container">
-                <div class="row">
-                    <div class="wow bounceIn col-md-12 col-sm-12">
-                        <div class="section-title">
-                            <h2>Problem statements</h2>
-                            <p>These are the problem statements for this hackathon.</p>
-                        </div>
-                    </div>
-    
-                    <div class="wow fadeInLeft col-md-12 col-sm-12" data-wow-delay="0.3s">
-                        <a href="docs/problems.pdf" class="btn btn-lg btn-danger smoothScroll wow " data-wow-delay="2.3s">Download Problem statements</a>
+        <div class="container">
+            <div class="row">
+                <div class="wow bounceIn col-md-12 col-sm-12">
+                    <div class="section-title">
+                        <h2>Problem statements</h2>
+                        <p>These are the problem statements for this hackathon.</p>
                     </div>
                 </div>
+
+                <div class="wow fadeInLeft col-md-12 col-sm-12" data-wow-delay="0.3s">
+                    <a href="#venue" class="btn btn-lg btn-danger smoothScroll wow " data-wow-delay="2.3s">Coming
+                        Soon...</a>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <!-- <section id="detail" class="parallax-section">
+        <div class="container">
+            <div class="row">
+                <div class="wow bounceIn col-md-12 col-sm-12">
+                    <div class="section-title">
+                        <h2>Format of Hack</h2>
+                        <p>This hackathon would be carried out in three phases</p>
+                    </div>
+                </div>
+
+                <div class="points wow fadeInLeft col-md-12 col-sm-12" data-wow-delay="0.3s">
+                    <li>Brainstorming - In this phase, all the participants would be brainstorming
+                        for the idea of the product that they’ll be developing in the hackathon.
+                        They will be developing their idea with their mentors to know their idea
+                        inside out, so as to overcome difficulties and have a full-proof plan.</li>
+                    <li>Coding - This is the phase where the development of the product
+                        happens along with evaluations in between the development.</li>
+                    <li>Pitching - In this phase, the team has to pitch the idea to the judging panel
+                        as to why they should use and buy this product and what are it’s features.</li>
+                    <!-- <li>Accommodation and refreshments will be provided.</li>
+                    <li>Also <strong>Certificates</strong> will be provided to all the participants of Product-Hack20</li> -->
+    <br>
+
+    <!-- <p class="quote"> So get ready to <strong>Code</strong>,<strong>Build</strong> and
+                        <strong>Hack</strong> !</p> -->
+    </div>
+
+
+    </div>
+    </div>
+    </section> -->
 
     <section id="venue" class="parallax-section">
         <div class="container">
@@ -489,17 +647,20 @@ h3 {
                     <h4>Uttar Pradesh, India </h4>
                 </div>
                 <div class="wow fadeInLeft col-md-offset-1 col-md-5 col-sm-8" data-wow-delay="0.9s">
-                        <h2>Contact us</h2>
-                        <h4>Aswanth K Anil</h4>
-                        <h4>+91-8075153249 </h4>
-                        <h4>aswanth9495@gmail.com</h4>
-                        <!-- <h4>https://iiic.iiita.ac.in</h4> -->
-                        <br>
-                        <h4>Siddhant Srivastav</h4>
-                        <h4>+91-9388472381 </h4>
-                        <h4>siddhant@gmail.com</h4>
-
-                    </div>
+                    <h2>Contact us</h2>
+                    <h4>Aadya Mishra</h4>
+                    <h4>+91-88406 26829 </h4>
+                    <h4>aadyamishra24@gmail.com</h4>
+                    <!-- <h4>https://iiic.iiita.ac.in</h4> -->
+                    <br>
+                    <h4>Sagar Lakhani</h4>
+                    <h4>+91-91385 79761 </h4>
+                    <h4>sagarlakhani1999@gmail.com</h4>
+                    <br>
+                    <h4>Tanmay Mittal</h4>
+                    <h4>+91-87558 53305 </h4>
+                    <h4>tanmaymittal0@gmail.com</h4>
+                </div>
             </div>
         </div>
     </section>
@@ -510,25 +671,28 @@ h3 {
                 <div class="wow bounceIn col-md-12 col-sm-12">
                     <div class="section-title">
                         <h2>Perks</h2>
-                        <p>These are some of the perks if you attend B-HACKS 2019</p>
+                        <p>These are some of the perks if you attend Product-HACK 2020</p>
                     </div>
                 </div>
 
                 <div class="points wow fadeInLeft col-md-12 col-sm-12" data-wow-delay="0.3s">
                     <li>Amazing cash prizes worth 40k.</li>
-        <li>Stickers, goodies and t-shirts are waiting for you.</li>
-       <li>Special prize for best hardware hack and all girls team.</li>
-       <li>Accommodation and refreshments will be provided.</li>
-       <li>Also <strong>Certificates</strong> will be provided to all the participants of b-hacks19.</li><br>
-        
-      <p class="quote"> So get ready to <strong>Code</strong>,<strong>Build</strong> and <strong>Hack</strong> !</p>
+                    <li>Stickers, goodies and t-shirts are waiting for you.</li>
+                    <li>Special prize for best hardware hack and all girls team.</li>
+                    <li>Accommodation and refreshments will be provided.</li>
+                    <li>Also <strong>Certificates</strong> will be provided to all the participants of Product-Hack20.
+                    </li>
+                    <br>
+
+                    <p class="quote"> So get ready to <strong>Code</strong>,<strong>Build</strong> and
+                        <strong>Hack</strong> !</p>
                 </div>
 
-                
+
             </div>
         </div>
     </section>
-   
+
 
     <section id="speakers" class="parallax-section">
         <div class="container">
@@ -543,42 +707,14 @@ h3 {
 
                 <div id="owl-speakers" class="owl-carousel">
 
-                    <div class="item wow fadeInUp col-md-3 col-sm-3">
-                        <div class="speakers-wrapper">
-                            <img src="images/team/aswant.jpg" class="img-responsive" alt="speakers">
-                        </div>
-                        <div class="speakers-thumb">
-                            <h3>Aswanth K</h3>
-                            
-                        </div>
-                    </div>
 
                     <div class="item wow fadeInUp col-md-3 col-sm-3">
                         <div class="speakers-wrapper">
-                            <img src="images/team/siddhant.jpg" class="img-responsive" alt="speakers">
+                            <img src="images/team/sagar.jpg" class="img-responsive" alt="speakers">
                         </div>
                         <div class="speakers-thumb">
-                            <h3>Siddhant Srivastav</h3>
-                          
-                        </div>
-                    </div>
-                      <div class="item wow fadeInUp col-md-3 col-sm-3">
-                        <div class="speakers-wrapper">
-                            <img src="images/team/shreyansh.jpg" class="img-responsive" alt="speakers">
-                        </div>
-                        <div class="speakers-thumb">
-                            <h3>Shreyansh Dwivedi</h3>
-                          
-                        </div>
-                    </div>
+                            <h3>Sagar Lakhani</h3>
 
-                    <div class="item wow fadeInUp col-md-3 col-sm-3">
-                        <div class="speakers-wrapper">
-                            <img src="images/team/tanmay.jpg" class="img-responsive" alt="speakers">
-                        </div>
-                        <div class="speakers-thumb">
-                            <h3>Tanmay Mittal</h3>
-                           
                         </div>
                     </div>
 
@@ -591,41 +727,90 @@ h3 {
 
                         </div>
                     </div>
+
+                    <div class="item wow fadeInUp col-md-3 col-sm-3">
+                        <div class="speakers-wrapper">
+                            <img src="images/team/tanmay.jpg" class="img-responsive" alt="speakers">
+                        </div>
+                        <div class="speakers-thumb">
+                            <h3>Tanmay Mittal</h3>
+
+                        </div>
+                    </div>
+
+                    <div class="item wow fadeInUp col-md-3 col-sm-3">
+                        <div class="speakers-wrapper">
+                            <img src="images/team/mudit.jpg" class="img-responsive" alt="speakers">
+                        </div>
+                        <div class="speakers-thumb">
+                            <h3>Mudit Goyal</h3>
+
+                        </div>
+                    </div>
+
+                    <div class="item wow fadeInUp col-md-3 col-sm-3">
+                        <div class="speakers-wrapper">
+                            <img src="images/team/javed.jpg" class="img-responsive" alt="speakers">
+                        </div>
+                        <div class="speakers-thumb">
+                            <h3>Javed Ali</h3>
+
+                        </div>
+                    </div>
+
+                    <div class="item wow fadeInUp col-md-3 col-sm-3">
+                        <div class="speakers-wrapper">
+                            <img src="images/team/priyesh.jpg" class="img-responsive" alt="speakers">
+                        </div>
+                        <div class="speakers-thumb">
+                            <h3>Priyesh Raj</h3>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="detail" class="parallax-section">
+    <!--     <section id="detail" class="parallax-section">
         <div class="container">
             <div class="row">
                 <div class="wow bounceIn col-md-12 col-sm-12">
                     <div class="section-title">
                         <h2>Adding webhook in Github</h2>
-                        <p>All the participants of bhacks are requested to follow these steps so that we can track all the commits in your project repository.</p>
+                        <p>All the participants of Product-Hack are requested to follow these steps so that we can
+                            track all
+                            the commits in your project repository.</p>
                     </div>
-                </div>
+                </div>a
 
                 <div class="points wow fadeInLeft col-md-12 col-sm-12" data-wow-delay="0.3s">
-                    <li>Join the zulip chat using the link : 
-                            <a href="https://bhacks.zulipchat.com">https://bhacks.zulipchat.com</a>
+                    <li>Join the zulip chat using the link :
+                        <a href="https://bhacks.zulipchat.com">https://bhacks.zulipchat.com</a>
                     </li>
-                    <li>Go to your repository on GitHub and click on the <b>Settings</b> tab. Select <b>Webhooks</b>. Click on <b>Add webhook</b>. GitHub may prompt you for your password.</li>
-        <li>Set <b>Payload URL</b> to <br>
-            <div style="background-color: rgb(223, 43, 73); font-size: 17px;" >https://bhacks.zulipchat.com/api/v1/external/github?api_key=tWwKmlSUEpuhrdLR6c4YJPgvhPoVrxbf&stream=github</div>
+                    <li>Go to your repository on GitHub and click on the <b>Settings</b> tab. Select <b>Webhooks</b>.
+                        Click on <b>Add webhook</b>. GitHub may prompt you for your password.</li>
+                    <li>Set <b>Payload URL</b> to <br>
+                        <div style="background-color: rgb(223, 43, 73); font-size: 17px;">
+                            https://bhacks.zulipchat.com/api/v1/external/github?api_key=tWwKmlSUEpuhrdLR6c4YJPgvhPoVrxbf&stream=github
+                        </div>
 
-            Set Content type to <b>application/json</b>. Select <b>Just the push event</b> and click <b>Add Webhook</b>.</li>      
+                        Set Content type to <b>application/json</b>. Select <b>Just the push event</b> and click <b>Add
+                            Webhook</b>.
+                    </li>
                 </div>
 
-                
+
             </div>
         </div>
-    </section>
+    </section> -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <p class="wow fadeInUp" data-wow-delay="0.6s">Website Designed by <i class="fa fa-love"></i><a style="color: #f2545f;">IIIC Team</a>
-                        <p class="wow fadeInUp" data-wow-delay="0.6s">&copy; BHACKS 2019. All Rights Reserved. <i class="fa fa-love"></i>
+                    <p class="wow fadeInUp" data-wow-delay="0.6s">Website Designed by <i class="fa fa-love"></i><a
+                            style="color: #be1754;">IIIC Team</a>
+                        <p class="wow fadeInUp" data-wow-delay="0.6s">&copy; PRODUCT-HACK 2020. All Rights Reserved. <i
+                                class="fa fa-love"></i>
                             <ul class="social-icon">
                                 <li><a href="" class="fa fa-envelope wow fadeInUp" data-wow-delay="1.3s"></a></li>
                                 <li><a href="" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.6s"></a></li>
@@ -634,14 +819,13 @@ h3 {
             </div>
         </div>
     </footer>
-
     <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+            $("a").on('click', function (event) {
 
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
@@ -655,7 +839,7 @@ h3 {
                     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 1000, function() {
+                    }, 1000, function () {
 
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;

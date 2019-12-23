@@ -62,8 +62,8 @@ a {
 #program,
 #sponsors,
 #speakers {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 
 footer {
@@ -96,7 +96,7 @@ footer {
     letter-spacing: 1px;
     font-size: 12px;
     padding: 14px 42px;
-    margin-top: 42px;
+    margin-top: 4px;
     margin-right: 12px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
@@ -107,7 +107,7 @@ footer {
 }
 
 #home .btn-danger {
-    background: #f2545f;
+    background: #be1754;
     border-color: transparent;
 }
 
@@ -150,7 +150,7 @@ footer {
   }
   
   .cube1, .cube2 {
-    background-color: #f2545f;
+    background-color: #be1754;
     width: 15px;
     height: 15px;
     position: absolute;
@@ -193,7 +193,8 @@ footer {
   }
 .custom-navbar {
     margin-bottom: 0;
-    background-color: #101010;
+    
+    background: linear-gradient(to right, #752596, #141E30);;
 }
 
 .custom-navbar .navbar-brand {
@@ -216,7 +217,7 @@ footer {
 
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #f2545f;
+    color: #be1754;
 }
 
 .custom-navbar .navbar-nav>li>a:hover,
@@ -226,7 +227,7 @@ footer {
 
 .custom-navbar .nav li.active>a {
     background-color: transparent;
-    color: #f2545f;
+    color: #be1754;
 }
 
 .custom-navbar .navbar-toggle {
@@ -247,7 +248,8 @@ footer {
     .custom-navbar {
         padding: 20px 0;
         border-bottom: 0;
-        background: 0 0;
+        background: linear-gradient(to right, #752596, #141E30);
+        border-radius: 0px;
     }
     .custom-navbar.top-nav-collapse {
         background: #101010;
@@ -267,8 +269,8 @@ footer {
 
 #home {
     background: #141E30;
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);
-    background: linear-gradient(to right, #243B55, #141E30);
+    background: -webkit-linear-gradient(to right, #752596, #141E30);
+    background: linear-gradient(to right, #752596, #141E30);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -299,7 +301,7 @@ footer {
 }
 
 #overview h3 {
-    color: #f2545f;
+    color: #be1754;
     font-size: 28px;
 }
 
@@ -340,11 +342,11 @@ footer {
 }
 
 #faq h2 {
-    color: #f2545f;
+    color: #be1754;
 }
 
 #faq h4 {
-    color: #f2545f;
+    color: #be1754;
 }
 
 #faq p {
@@ -397,8 +399,8 @@ footer {
     position: absolute;
     line-height: 1;
     right: 1em;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    /* transform: translateY(0%); */
 }
 
 #faq .panel-heading .panel-title a[data-toggle="collapse"].collapsed::after {
@@ -423,7 +425,7 @@ footer {
 }
 
 #sponsors h2 {
-    color: #f2545f;
+    color: #be1754;
 }
 
 #sponsors p {
@@ -439,7 +441,7 @@ footer {
 }
 
 #venue h2 {
-    color: #f2545f;
+    color: #be1754;
     font-size: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -457,7 +459,7 @@ footer {
 }
 
 #detail .fa {
-    color: #f2545f;
+    color: #be1754;
     font-size: 48px;
 }
 
@@ -481,7 +483,7 @@ footer {
 }
 
 #speakers h2 {
-    color: #f2545f;
+    color: #be1754;
 }
 
 #speakers p {
@@ -489,7 +491,7 @@ footer {
 }
 
 #speakers h3 {
-    color: #f2545f;
+    color: #be1754;
     font-size: 18px;
     margin-bottom: 0px;
 }
@@ -549,7 +551,7 @@ footer {
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {
-    color: #f2545f;
+    color: #be1754;
     cursor: default;
     background-color: transparent;
     border: 1px solid transparent;
@@ -581,7 +583,7 @@ footer {
 }
 
 .go-top:hover {
-    background: #f2545f;
+    background: #be1754;
     color: #ffffff;
 }
 
@@ -626,7 +628,7 @@ footer {
         line-height: 20px;
     }
     #home {
-        height: 65vh;
+        height: 90vh;
     }
 }
 
@@ -651,8 +653,8 @@ footer {
     #home {
         height: 100vh;
         background: #141E30;
-        background: -webkit-linear-gradient(to right, #243B55, #141E30);
-        background: linear-gradient(to right, #243B55, #141E30);
+        background: -webkit-linear-gradient(to right, #752596, #141E30);
+        background: linear-gradient(to right, #752596, #141E30);
     }
     #home h3 {
         font-size: 15px;
@@ -663,7 +665,7 @@ footer {
 }
 
 .landing-logo {
-    width: 650px;
+    width: 350px;
 }
 @media (max-width : 768px) {
     .landing-logo{
@@ -673,13 +675,13 @@ footer {
 
 .github{
     margin-top: -60px;
-    width: 700px;
+    width: 600px;
 }
 
 @media (max-width : 768px){
     .github{
         margin-top : -60px;
-        width: 300px;
+        width: 280px;
     }
 }
 
@@ -693,7 +695,7 @@ footer {
 @media (max-width : 768px){
     .cb{
         margin-top : -60px;
-        width: 150px;
+        width: 200px;
     }
 }
 

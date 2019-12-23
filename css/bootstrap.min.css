@@ -4048,20 +4048,20 @@ fieldset[disabled] .btn-warning:hover {
 
 .btn-danger {
     color: #fff;
-    background-color: #d9534f;
+    background-color: #be1754;
     border-color: #d43f3a
 }
 
 .btn-danger.focus,
 .btn-danger:focus {
     color: #fff;
-    background-color: #c9302c;
+    background-color: #be1754;
     border-color: #761c19
 }
 
 .btn-danger:hover {
     color: #fff;
-    background-color: #c9302c;
+    background-color: #be1754;
     border-color: #ac2925
 }
 

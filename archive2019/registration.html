@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/png" href="images/Asset 9.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>B-HACKS Registration</title>
+    <link rel="shortcut icon" type="image/png" href="images/Asset 9.png">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+    .form-box {
+        margin-top :50px;
+    }
+     .fa-check-circle {
+        font-size: 50px;
+        color: green;
+    }
+    .notification{
+        margin: auto;
+        display :none;
+    }
+    /*
+    .reg-success {
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    .success-box {
+        margin: auto;
+        margin-top : 30%;
+    } */
+    .is-new {
+      background: #141E30;
+      background: -webkit-linear-gradient(to right, #243B55, #141E30);
+      background: linear-gradient(to right, #243B55, #141E30);
+    }
+    .title{
+      color: white;
+    }
+    body{
+      background: white;
+    }
+    .button {
+      background: #f2545f;
+      color: white;
+    }
+    .reg-logo {
+    width: 650px;
+}
+@media (max-width : 768px) {
+    .reg-logo{
+    width: auto;
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <!-- Header start  -->
+    <section class="hero is-small is-new is-bold">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <!-- <h1 class="title">
+              Registration   
+            </h1> -->
+            <img class="reg-logo" src="images/Asset 20.svg" >
+            <h1 class="title is-1 " style="color:#f2545f;">
+             Registration
+            </h1>
+          </div>
+        </div>
+      </section>
+      <!-- Header end -->
+      <!-- Form start  -->
+      
+      <div class="container reg-section">
+          <div class="columns">
+                <div class="notification is-warning">
+                        <button class="delete"></button>
+                        <h1 class="title is-1"> <i class="fas fa-check-circle"></i> Registration Successful</h1> 
+                      </div>
+                      
+          </div>
+          <div class="columns">
+              <div class="column is-8 is-offset-2">
+                <div class=" form-box box">
+          <div class="columns">
+              <div class="column is-12">
+            <div class="field">
+                    <label class="label">Team name</label>
+                    <div class="control">
+                      <input required class="form-val input" id="teamName" type="text" placeholder="">
+                    </div>
+                  </div>
+                </div>      
+            </div>
+            <div class="columns">
+                    <div class="column is-12">
+                            <div class="field">
+                                    <label class="label">Institute name</label>
+                                    <div class="control">
+                                    <input required class="form-val input" id="collegeName"type="text" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="columns">
+                    <div class="column is-12">
+                            <div class="field">
+                                    <label class="label">Contact number</label>
+                                    <div class="control">
+                                    <input required class="form-val input" id="contact" type="text" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class="columns">
+                <div class="column is-12">
+                        <div class="field">
+                                <label class="label">Team size</label>
+                                <div class="control">
+                                  <div class="select">
+                                    <select class="team-size">
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                </div>
+            </div>
+                <div class="team1">
+                        <label class="label">Member 1</label>
+                    <div class="columns">
+                           
+                        <div class="column is-6">
+                            <div class="field">
+                    
+                    <div class="control">
+                      <input required class="form-val input" id="name1" type="text" placeholder="Name">
+                    </div>
+                  </div>
+                        </div>
+                        <div class="column is-6">
+                                <div class="field">
+                        
+                        <div class="control">
+                          <input required class="form-val input" id="email1" type="text" placeholder="Email ID">
+                        </div>
+                      </div>
+                            </div>
+                    </div>
+                    <div class="columns">
+                           
+                            <div class="column is-6">
+                                <div class="field">
+                        
+                        <div class="control">
+                          <input required class="form-val input" id="github1" type="text"  placeholder="Github link">
+                        </div>
+                      </div>
+                            </div>
+                            <div class="column is-6">
+                                    <div class="field">
+                                        <div class="control">
+                                          Tshirt size &nbsp &nbsp
+                                          <div class="select">
+                                            <select class="tshirt1-size">
+                                              <option>S</option>
+                                              <option>M</option>
+                                              <option>L</option>
+                                              <option>XL</option>
+                                              <option>XXL</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </div>
+                          
+                                </div>
+                        </div>
+                </div>
+                <div class="team2">
+                        <label class="label">Member 2</label>
+                    <div class="columns">
+                           
+                        <div class="column is-6">
+                            <div class="field">
+                    
+                    <div class="control">
+                      <input required class="form-val input" id="name2" type="text" placeholder="Name">
+                    </div>
+                  </div>
+                        </div>
+                        <div class="column is-6">
+                                <div class="field">
+                        
+                        <div class="control">
+                          <input required class="form-val input" id="email2" type="text" placeholder="Email ID">
+                        </div>
+                      </div>
+                            </div>
+                    </div>
+                    <div class="columns">
+                           
+                            <div class="column is-6">
+                                <div class="field">
+                        
+                        <div class="control">
+                          <input required class="form-val input" id="github2" type="text"  placeholder="Github link">
+                        </div>
+                      </div>
+                            </div>
+                            <div class="column is-6">
+                                    <div class="field">
+                            
+                                        <div class="control">
+                                            Tshirt size &nbsp &nbsp
+                                            <div class="select">
+                                              <select class="tshirt2-size">
+                                                <option>S</option>
+                                                <option>M</option>
+                                                <option>L</option>
+                                                <option>XL</option>
+                                                <option>XXL</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                          </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="team3">
+                        <label class="label">Member 3</label>
+                    <div class="columns">
+                           
+                        <div class="column is-6">
+                            <div class="field">
+                    
+                    <div class="control">
+                      <input required class="form-val input" id="name3" type="text" placeholder="Name">
+                    </div>
+                  </div>
+                        </div>
+                        <div class="column is-6">
+                                <div class="field">
+                        
+                        <div class="control">
+                          <input required class="form-val input" id="email3" type="text" placeholder="Email ID">
+                        </div>
+                      </div>
+                            </div>
+                    </div>
+                    <div class="columns">
+                           
+                            <div class="column is-6">
+                                <div class="field">
+                        
+                        <div class="control">
+                          <input required class="form-val input" id="github3" type="text"  placeholder="Github link">
+                        </div>
+                      </div>
+                            </div>
+                            <div class="column is-6">
+                                    <div class="field">
+                            
+                            <div class="control">
+                                          Tshirt size &nbsp &nbsp
+                                          <div class="select">
+                                            <select class="tshirt3-size">
+                                              <option>S</option>
+                                              <option>M</option>
+                                              <option>L</option>
+                                              <option>XL</option>
+                                              <option>XXL</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                          </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="team4">
+                        <label class="label">Member 4</label>
+                    <div class="columns">
+                           
+                        <div class="column is-6">
+                            <div class="field">
+                    
+                    <div class="control">
+                      <input required class="form-val input" id="name4" type="text" placeholder="Name">
+                    </div>
+                  </div>
+                        </div>
+                        <div class="column is-6">
+                                <div class="field">
+                        
+                        <div class="control">
+                          <input required class="form-val input" id="email4" type="text" placeholder="Email ID">
+                        </div>
+                      </div>
+                            </div>
+                    </div>
+                    <div class="columns">
+                           
+                            <div class="column is-6">
+                                <div class="field">
+                        
+                        <div class="control">
+                          <input required class="form-val input" id="github4" type="text"  placeholder="Github link">
+                        </div>
+                      </div>
+                            </div>
+                            <div class="column is-6">
+                                    <div class="field">
+                            
+                                        <div class="control">
+                                            Tshirt size &nbsp &nbsp
+                                            <div class="select">
+                                              <select class="tshirt4-size">
+                                                <option>S</option>
+                                                <option>M</option>
+                                                <option>L</option>
+                                                <option>XL</option>
+                                                <option>XXL</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                          </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-6 is-offset-3">
+                            <div class="field is-grouped" >
+                                    <div class="control" style="margin:auto;">
+                                      <button id="submit" class="button">Submit</button>
+                                    </div>
+                                    
+                                  </div>
+                    </div>
+                </div>
+                
+                </div>
+
+            </div>
+            </div>
+              </div>
+
+    
+      <!-- Form end  -->
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/airtable.browser.js"></script>
+<script>
+    $('.notification').hide();  
+$('.team3').hide();
+$('.team4').hide();
+// console.log($('.team-size').val())
+$('.team-size').on('change', function() {
+//   alert( this.value );
+  if(this.value==2){
+    console.log('run');
+    $('.team1').fadeIn();
+    $('.team2').fadeIn();
+    $('.team3').fadeOut();
+    $('.team4').fadeOut();
+}else if(this.value==3){
+    console.log('run');
+    $('.team1').fadeIn();
+    $('.team2').fadeIn();
+    $('.team3').fadeIn();
+    $('.team4').fadeOut();
+}else if(this.value==4){
+    $('.team1').fadeIn();
+    $('.team2').fadeIn();
+    $('.team3').fadeIn();
+    $('.team4').fadeIn();
+}
+});
+$('.delete').click(function(){
+    $('.notification').fadeOut();
+});
+</script>
+<script>
+var Airtable = require('airtable');
+var base = new Airtable({apiKey: 'keyohoRKRtvuB9AvU'}).base('appvpfNQtu7Pcb4zc');
+$("#submit").click(function(){
+    var teamName=document.getElementById("teamName").value;
+    var collegeName=document.getElementById("collegeName").value;
+    var contact=document.getElementById("contact").value;
+    var teamSize=$('.team-size').val();
+    var name1=document.getElementById("name1").value;
+    var email1=document.getElementById("email1").value;
+    var github1=document.getElementById("github1").value;
+    var tshirt1=$('.tshirt1-size').val();
+    var name2=document.getElementById("name2").value;
+    var email2=document.getElementById("email2").value;
+    var github2=document.getElementById("github2").value;
+    var tshirt2=$('.tshirt2-size').val();
+    var name3=document.getElementById("name3").value;
+    var email3=document.getElementById("email3").value;
+    var github3=document.getElementById("github3").value;
+    var tshirt3=$('.tshirt3-size').val();
+    var name4=document.getElementById("name4").value;
+    var email4=document.getElementById("email4").value;
+    var github4=document.getElementById("github4").value;
+    var tshirt4=$('.tshirt4-size').val();
+    base('registration').create({
+        "Team name" : teamName,
+        "College name" : collegeName,
+        "contact" : contact,
+        "Team size" : teamSize,
+        "name1" :name1,
+        "email1" : email1,
+        "github1" : github1,
+        "tshirt1" : tshirt1,
+        "name2" :name2,
+        "email2" : email2,
+        "github2" : github2,
+        "tshirt2" : tshirt2,
+        "name3" :name3,
+        "email3" : email3,
+        "github3" : github3,
+        "tshirt3" : tshirt3,
+        "name4" :name4,
+        "email4" : email4,
+        "github4" : github4,
+        "tshirt4" : tshirt4,
+    },function(err, record) {
+    if (err) { console.error(err); return; }
+    console.log(record.getId());
+    $('.form-val').val("");
+    $('.notification').fadeIn();
+
+});
+});
+
+</script>
+</html>
