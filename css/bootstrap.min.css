@@ -1380,7 +1380,8 @@ th {
 :before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
+    /* padding-top:15px; */
 }
 
 html {
@@ -1547,7 +1548,7 @@ h6 small {
 h1,
 h2,
 h3 {
-    margin-top: 20px;
+    margin-top: 130px;
     margin-bottom: 10px
 }
 
@@ -1659,6 +1660,7 @@ mark {
 
 .text-center {
     text-align: center
+    /* max-resolution: top 10px; */
 }
 
 .text-justify {
@@ -5093,7 +5095,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .container>.navbar-collapse,
 .container>.navbar-header {
     margin-right: -15px;
-    margin-left: -15px
+    margin-left: -15px;
+     /* margin-bottom: 35px;  margin for mobile version */
 }
 
 @media (min-width:768px) {
@@ -7757,7 +7760,8 @@ button.close {
 .center-block {
     display: block;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    /* margin-top:150px; */
 }
 
 .pull-right {
